@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Home | Gen-K</title>
 		<meta name="description" content="Socialise and listen to the hottest kpop hits.">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 
@@ -27,21 +28,34 @@
 			</section>
 
 			<section id="chat">
-
-				<form action="" method="">
-					<div>
-						<label for="chat-username">Username:</label>
-						<input type="text" id="chat-username">
-						<span id="chat-username-message"></span>
+				<div id="chat-container">
+					<div id="chat-messages"></div>
+					<div id="chat-input">
+						<form action="" method="">	
+							<div id="left-buttons">
+								<button id="chat-emoji" class="chat-button"><i class="material-icons">&#xE420;</i></button>
+								<button id="chat-settings" class="chat-button"><i class="material-icons">settings</i></button>
+							</div>
+							<div id="chat-user-input">
+								<label for="chat-username">Username:</label>
+								<input type="text" id="chat-username">
+								<span id="chat-username-message"></span>
+					
+								<label for="profile-pic-url">Profile Pic URL:</label>
+								<input type="text" id="profile-pic-url">
+							</div>
+							<div>
+								<input name="usermsg" type="text" id="usermsg" placeholder="Enter message here...">
+							</div>
+							<div id="right-buttons">
+								<input name="submitmsg" type="submit"  id="submitmsg" value="&#xE163;" class="material-icons">
+							</div>
+						</form>
 					</div>
-					<div>
-						<label for="profile-pic-url">Profile Pic URL:</label>
-						<input type="text" id="profile-pic-url">
-					</div>
-				</form>
+				</div>
 			</section>
 
-			<hr>
+			<hr><br><br><br>
 
 			<section id="contact">
 				<form id="contact-form" action="contact.php" method="get">
@@ -61,26 +75,6 @@
 				</form>
 			</section>
 		</main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 		<footer>
 		</footer>
