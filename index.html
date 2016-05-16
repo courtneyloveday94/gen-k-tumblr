@@ -27,14 +27,63 @@
 			</section>
 
 			<section id="chat">
+
+				<form action="" method="">
+					<div>
+						<label for="chat-username">Username:</label>
+						<input type="text" id="chat-username">
+						<span id="chat-username-message"></span>
+					</div>
+					<div>
+						<label for="profile-pic-url">Profile Pic URL:</label>
+						<input type="text" id="profile-pic-url">
+					</div>
+				</form>
 			</section>
 
+			<hr>
 
 			<section id="contact">
+				<form id="contact-form" action="contact.php" method="get">
+					<div>
+						<label for="name">Name:</label>
+						<input type="text" id="name">
+					</div>
+					<div>
+						<label for="email">Email:</label>
+						<input type="email" id="email">
+					</div>
+					<div>
+						<label for="contact-message">Message:</label>
+						<textarea name="message" id="contact-message" cols="30" rows="5" required></textarea>
+						<span id="contact-message-message"></span>
+					</div>
+				</form>
 			</section>
 		</main>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		<footer>
 		</footer>
+		<script src="js/localstorage-forms.js"></script>
 	</body>
 </html>
