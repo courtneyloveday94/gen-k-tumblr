@@ -1,17 +1,100 @@
-
-
-
-
 body {
-	background-color: pink;
+	width: 100%;
+	height: 100%;
+	background-color: #aaa;
 	min-width: 250px;
+	margin: 0;
+	padding: 0;
+}
+
+.slideout-menu {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	width: 256px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+	display: none;
+}
+
+.slideout-panel {
+	position:relative;
+	z-index: 1;
+	will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
+
+h1 {
+	font-family: "memoriam-headline-pro";
+	font-weight: 400;
+	font-style: normal;
+}
+button {
+	background-color: transparent;
+	border: none;
+}
+.toggle-button {
+	font-size: 40px;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	width: 40px;
+	height: 40px;
+	text-align: center;
 }
 
 
+----------------------------------------  HOME CSS  ------------------------------------------
 
+h1 {
+	font-size: 60px;
+	color: #fff;
+}
 
+#home p {
+	font-size: 18px;
+	text-transform: lowercase;
+}
+#home ul li {
+	list-style: none;
+	display: block;
+}
 
-/*----------------------------------------  CHAT CSS  ------------------------------------------*/
+#home a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#home .button {
+	font-size: 14px;
+	text-transform: uppercase;
+	width: 200px;
+	height: 30px;
+	border: 1px solid #fff;
+	text-align: center;
+}
+
+#home #radio-button{
+	color: #fff;
+}
+
+#home #chat-button {
+
+}
+
+----------------------------------------  CHAT CSS  ------------------------------------------
 #chat-input {
 	width: 100%;
 	background-color: white;
@@ -20,24 +103,24 @@ body {
 #chat-user-input {
 	display: none;
 }
-button {
-	background-color: transparent;
-	border: none;
-}
 #left-buttons {
-	width: 15%;
+	width: 14%;
 	float: left;
 	padding: 0;
 	margin: 0;
 }
 #right-buttons {
 	float: right;
-	width: 15%;
+	width: 14%;
 	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 #submitmsg {
 	background: transparent;
 	border: none;
+	padding: 0;
+	margin: 0;
 }
 #usermsg {
 	width: 70%;

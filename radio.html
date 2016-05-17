@@ -31,14 +31,20 @@
       <header>
         <button class="toggle-button">☰</button>
       </header>
-      <section id="home">
-      	<h1 id="logo">Gen-K</h1>
-		<p>Socialise and listen to the hottest kpop hits</p>
-		<ul>
-			<li id="radio-button" class="button"><a href="radio.html">Listen Now</a></li>
-			<li id="chat-button" class="button"><a href="chat.html">Chat</a></li>
-		</ul>
+      
+      <section id="radio">
+            <div class="cc_player" data-username="ggbgcjrh">Loading ...</div>
+            <div class="now-playing"><p>Current song: <a href="http://london-ssd.myautodj.com:2199/tunein/ggbgcjrh.pls" id="cc_strinfo_song_ggbgcjrh" class="cc_streaminfo">Loading ...</a></p><br /></div>
+            <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list">Loading ...</div>
+            <div id="cc_req_result_ggbgcjrh"></div>
+<form>
+Song artist: <input type="text" id="cc_req_artist_ggbgcjrh" name="request[artist]" size="40" maxlength="127" /><br />
+Song title: <input type="text" id="cc_req_title_ggbgcjrh" name="request[title]" size="40" maxlength="127" /><br />
+<input type="button" id="cc_req_button_ggbgcjrh" class="cc_request_form" value="Submit song request" /><br />
+</form>
+        </div> 
       </section>
+ 		
     </main>
 
 
@@ -47,12 +53,10 @@
 
 
 
-
-    <!-- allows access to the album art that will be used as the background image -->
-    <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list">Loading ...</div>
-
-
-    <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/recenttracks.js"></script>
+		<script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/player.js"></script>
+        <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/streaminfo.js"></script>
+        <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/recenttracks.js"></script>
+        <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/request.js"></script>
 
 
 
@@ -74,6 +78,6 @@
         slideout.toggle();
       });
     </script>
-	<script src="js/localstorage-forms.js"></script>
+    <script src="js/localstorage-forms.js"></script>
 </body>
 </html>

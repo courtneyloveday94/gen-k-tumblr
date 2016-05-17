@@ -31,34 +31,32 @@
       <header>
         <button class="toggle-button">☰</button>
       </header>
-      <section id="home">
-      	<h1 id="logo">Gen-K</h1>
-		<p>Socialise and listen to the hottest kpop hits</p>
-		<ul>
-			<li id="radio-button" class="button"><a href="radio.html">Listen Now</a></li>
-			<li id="chat-button" class="button"><a href="chat.html">Chat</a></li>
-		</ul>
+      
+      <section id="contact">
+        <form id="contact-form" action="contact.php" method="get">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+          </div>
+          <div>
+            <label for="contact-message">Message:</label>
+            <textarea name="message" id="contact-message" cols="30" rows="5" required></textarea>
+            <span id="contact-message-message"></span>
+          </div>
+        </form>
       </section>
+ 		
+
+
+
+
+
+
     </main>
-
-
-
-
-
-
-
-
-    <!-- allows access to the album art that will be used as the background image -->
-    <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list">Loading ...</div>
-
-
-    <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/recenttracks.js"></script>
-
-
-
-
-
-
 
     <script src="js/slideout.min.js"></script>
     <script>
@@ -74,6 +72,6 @@
         slideout.toggle();
       });
     </script>
-	<script src="js/localstorage-forms.js"></script>
+    <script src="js/localstorage-forms.js"></script>
 </body>
 </html>

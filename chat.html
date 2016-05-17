@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav id="menu">
+    <!-- <nav id="menu">
       <h2>Menu</h2>
       <ul>
       	<li><a href="">Home</a></li>
@@ -25,40 +25,48 @@
       	<li><a href="chat.html">Chat</a></li>
       	<li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
 
     <main id="panel">
       <header>
         <button class="toggle-button">☰</button>
       </header>
-      <section id="home">
-      	<h1 id="logo">Gen-K</h1>
-		<p>Socialise and listen to the hottest kpop hits</p>
-		<ul>
-			<li id="radio-button" class="button"><a href="radio.html">Listen Now</a></li>
-			<li id="chat-button" class="button"><a href="chat.html">Chat</a></li>
-		</ul>
+      
+      <section id="chat">
+        <div id="chat-container">
+          <div id="chat-messages"></div>
+          <div id="chat-input">
+            <form action="" method="">  
+              <div id="left-buttons">
+                <button id="chat-emoji" class="chat-button"><i class="material-icons">&#xE420;</i></button>
+                <button id="chat-settings" class="chat-button"><i class="material-icons">settings</i></button>
+              </div>
+              <div id="chat-user-input">
+                <label for="chat-username">Username:</label>
+                <input type="text" id="chat-username">
+                <span id="chat-username-message"></span>
+          
+                <label for="profile-pic-url">Profile Pic URL:</label>
+                <input type="text" id="profile-pic-url">
+              </div>
+              <div>
+                <input name="usermsg" type="text" id="usermsg" placeholder="Enter message here...">
+              </div>
+              <div id="right-buttons">
+                <input name="submitmsg" type="submit"  id="submitmsg" value="&#xE163;" class="material-icons">
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
+ 		
+
+
+
+
+
+
     </main>
-
-
-
-
-
-
-
-
-    <!-- allows access to the album art that will be used as the background image -->
-    <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list">Loading ...</div>
-
-
-    <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/recenttracks.js"></script>
-
-
-
-
-
-
 
     <script src="js/slideout.min.js"></script>
     <script>
@@ -74,6 +82,6 @@
         slideout.toggle();
       });
     </script>
-	<script src="js/localstorage-forms.js"></script>
+    <script src="js/localstorage-forms.js"></script>
 </body>
 </html>
