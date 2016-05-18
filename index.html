@@ -29,35 +29,31 @@
     </nav>
 
     <main id="panel">
-    	<div id="album-cover"></div>
-    	<div id="white-overlay"></div>
-    	<div id="gradient-overlay"></div>
-      <header>
-        <button class="toggle-button">☰</button>
-      </header>
-      <section id="home">
-      	<h1 id="logo">Gen-K</h1>
-		<p>Socialise and listen to the hottest kpop hits</p>
-		<ul>
-			<li id="radio-button" class="button"><a href="radio.html">Listen Now</a></li>
-			<li id="chat-button" class="button"><a href="chat.html">Chat</a></li>
-		</ul>
-      </section>
+    <!-- background -->
+    	<div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list"></div>
+		<div id="white-overlay"></div>
+		<div id="purple-gradient-overlay"></div>
+	<!-- end of the background code -->
+      	<header>
+        	<button class="toggle-button">☰</button>
+      	</header>
+      	<section id="home">
+      		<h1 id="logo">Gen-K</h1>
+			<p>Socialise and listen to the hottest kpop hits</p>
+			<ul>
+				<li id="radio-button" class="button"><a href="radio.html">Listen Now</a></li>
+				<li id="chat-button" class="button"><a href="chat.html">Chat</a></li>
+			</ul>
+      	</section>
     </main>
 
 
 
 
-<canvas id="background-img" width="100%" height="100%">
-	<p>your browser doesn't support canvas</p>
-</canvas>
 
 
 
     <!-- allows access to the album art that will be used as the background image -->
-    <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list">Loading ...</div>
-
-
     <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/recenttracks.js"></script>
 
 
@@ -65,20 +61,20 @@
 
 
 
-
+<!-- slideout code. don't touch this -->
     <script src="js/slideout.min.js"></script>
     <script>
-      var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 70
-      });
+      	var slideout = new Slideout({
+    	    'panel': document.getElementById('panel'),
+    	    'menu': document.getElementById('menu'),
+    	    'padding': 256,
+    	    'tolerance': 70
+      	});
 
-      // Toggle button
-      document.querySelector('.toggle-button').addEventListener('click', function() {
+      	// Toggle button
+      	document.querySelector('.toggle-button').addEventListener('click', function() {
         slideout.toggle();
-      });
+      	});
     </script>
 	<script src="js/localstorage-forms.js"></script>
 </body>
