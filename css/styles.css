@@ -49,6 +49,12 @@ h1 {
 	font-family: "memoriam-headline-pro";
 	font-weight: 400;
 	font-style: normal;
+	color: #fff;
+	font-size: 60px;
+	display: block;
+	margin: 0 auto;
+	width: 215px;
+	
 }
 button {
 	background-color: transparent;
@@ -64,7 +70,7 @@ button {
 	text-align: center;
 }
 
----------------------------- BACKGROUND ALBUM COVER BACKGROUND CSS ---------------------------
+/*---------------------------- BACKGROUND ALBUM COVER BACKGROUND CSS ---------------------------*/
 
 .cctrack:nth-of-type(2),
 .cctrack:nth-of-type(3),
@@ -119,18 +125,6 @@ button {
   }
 }
 
-#white-overlay {
-  background-color: rgba(255, 255, 255, 0.4);
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -9;
-}
-
 #purple-gradient-overlay {
   background: rgba(64, 64, 128, 1);
   background: -moz-linear-gradient(-45deg, rgba(64, 64, 128, 1) 0%, rgba(130, 130, 172, 1) 100%);
@@ -144,54 +138,93 @@ button {
   right: 0;
   height: 100%;
   width: 100%;
-  filter: opacity(80%);
-  -webkit-filter: opacity(80%);
-  -moz-filter: opacity(80%);
-  -o-filter: opacity(80%);
-  -ms-filter: opacity(80%);
-  z-index: -8;
+  filter: opacity(85%);
+  -webkit-filter: opacity(85%);
+  -moz-filter: opacity(85%);
+  -o-filter: opacity(85%);
+  -ms-filter: opacity(85);
+  z-index: -9;
 }
 
+/*----------------------------------------  HOME CSS  ------------------------------------------*/
 
-----------------------------------------  HOME CSS  ------------------------------------------
 
-h1 {
-	font-size: 60px;
-	color: #fff;
+#panel {
+	position: relative;
+}
+
+#home {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 328px;
+	width: 250px;
+	margin: -164px 0 0 -125px;
 }
 
 #home p {
 	font-size: 18px;
 	text-transform: lowercase;
+	font-family: "open-sans";
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	width: 250px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+#home ul {
+	padding: 0;
+	margin: 0;
 }
 #home ul li {
 	list-style: none;
 	display: block;
+	margin: 0 auto;
 }
 
 #home a {
 	text-decoration: none;
 	color: inherit;
+	position: relative;
+}
+
+#radio-button a {
+	top: 7px;
+}
+#chat-button a {
+	top: 9px;
 }
 
 #home .button {
 	font-size: 14px;
 	text-transform: uppercase;
 	width: 200px;
-	height: 30px;
-	border: 1px solid #fff;
+	height: 40px;
 	text-align: center;
+	font-family: "myriad-pro";
+	font-weight: 600;
+	font-style: normal;
+	box-sizing: border-box;
+	border-radius: 20px;
+	width:230px;
 }
 
 #home #radio-button{
 	color: #fff;
+	margin-bottom: 20px;
+	border: 2px solid rgba(255,255,255,0.5);
+	
 }
 
 #home #chat-button {
-
+	background-color: rgba(255,255,255,0.5);
+	color: rgba(0,0,0,1);
+	border: none;
+	mix-blend-mode: screen;
 }
 
-----------------------------------------  CHAT CSS  ------------------------------------------
+/*----------------------------------------  CHAT CSS  ------------------------------------------*/
 #chat-input {
 	width: 100%;
 	background-color: white;
