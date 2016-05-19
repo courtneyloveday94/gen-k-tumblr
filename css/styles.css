@@ -49,7 +49,6 @@ h1 {
 	font-weight: 400;
 	font-style: normal;
 	color: #fff;
-	font-size: 60px;
 	display: block;
 	margin: 0 auto;
 	width: 215px;
@@ -238,6 +237,9 @@ header {
 	width: 250px;
 	margin: -164px 0 0 -125px;
 }
+#home h1 {
+	font-size: 60px !important;
+}
 #home p {
 	font-size: 18px;
 	text-transform: lowercase;
@@ -406,8 +408,8 @@ header {
 	font-family: "myriad-pro";
 	font-weight: 600;
 }
-.radio-widget #cc_strinfo_song_ggbgcjrh, .radio-widget .cc_streaminfo {
-	width: 100%;
+.radio-widget #cc_strinfo_song_ggbgcjrh, .radio-widget .cc_streaminfo a {
+	width: 70%;
 	min-width: 210px;
 	height: 50px;
 	overflow: hidden;
@@ -416,6 +418,7 @@ header {
 	display: inline-block !important;
 	line-height: 50px;
 	top: -5px;
+	margin-left: 15%;
 }
 .radio-widget .jp-type-single, .radio-widget .jp-gui {
 	height: 50px !important;
@@ -462,6 +465,11 @@ header {
 	display: inline-block;
 	position: absolute;
 	bottom: 50px;
+	height: 60px;
+}
+.usermsg {
+	width: 70%;
+	display: inline-block;
 }
 #chat-user-input {
 	display: none;
@@ -483,13 +491,15 @@ header {
 	background: transparent;
 	border: none;
 	padding: 0;
-	margin: 0;
+	margin: 15px 0 0 5px;
 }
 #usermsg {
-	width: 70%;
+	width: 100%;
 	background-color: white;
 	height: 50px;
 	display: inline-block;
+	border: 1px solid #aaa;
+	margin-top: 2.5px;
 }
 
 /*-------------------------  CHAT TABLET CSS  -------------------------*/
