@@ -10,6 +10,10 @@ body {
 	min-width: 320px;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+}
+a {
+	color: inherit;
 }
 .slideout-menu {
 	position: fixed;
@@ -319,8 +323,103 @@ header {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------  RADIO WIDGET CSS  -------------------------*/
 /*-------------------------  RADIO WIDGET PHONE CSS  -------------------------*/
+
+.radio-widget {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: 1px solid #aaa;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.radio-widget-container {
+	position: relative;
+}
+
+.radio-widget .cc_player .jp-details {
+	display: none;
+}
+
+.radio-widget .cc_player .jp-play {
+	background: url(../img/play-button.png) !important;
+	background-color: #fff;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: inline-block;
+}
+.radio-widget .cc_player .jp-controls {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.radio-widget .cc_player > div{
+	height: 50px;
+}
+.radio-widget .cc_player .jp-volume-controls {
+	display: none;
+}
+.radio-widget .jp-interface {
+	height: 50px;
+	width: 30px;
+	background-color: transparent;
+}
+.radio-widget .jp-audio-stream {
+	border: none;
+	color: #fff;
+	background-color: transparent;
+}
+.radio-widget .now-playing {
+	position: absolute;
+	top: 5px;
+	display: inline-block;
+	width: 100%;
+}
+.radio-widget .now-playing a {
+	color: #fff !important;
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	font-family: "myriad-pro";
+	font-weight: 600;
+}
+.radio-widget #cc_strinfo_song_ggbgcjrh, .radio-widget .cc_streaminfo {
+	width: 100%;
+	min-width: 210px;
+	height: 50px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	display: inline-block !important;
+	line-height: 50px;
+	top: -5px;
+}
+.radio-widget .jp-type-single, .radio-widget .jp-gui {
+	height: 50px !important;
+}
 
 /*-------------------------  RADIO WIDGET TABLET CSS  -------------------------*/
 @media all and (min-width: 480px) {
@@ -332,6 +431,27 @@ header {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*-------------------------  CHAT CSS  -------------------------*/
 
 /*-------------------------  CHAT PHONE CSS  -------------------------*/
@@ -340,6 +460,8 @@ header {
 	width: 100%;
 	background-color: white;
 	display: inline-block;
+	position: absolute;
+	bottom: 50px;
 }
 #chat-user-input {
 	display: none;
