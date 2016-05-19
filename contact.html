@@ -20,17 +20,24 @@
     <nav id="menu">
       <h2>Menu</h2>
       <ul>
-      	<li><a href="">Home</a></li>
-      	<li><a href="radio.html">Radio</a></li>
-      	<li><a href="chat.html">Chat</a></li>
-      	<li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><i class="material-icons">&#xE88A;</i>Home</a></li>
+        <li><a href="radio.html"><i class="material-icons">&#xE405;</i>Radio</a></li>
+        <li><a href="chat.html"><i class="material-icons">&#xE0CB;</i>Chat</a></li>
+        <li id="current"><a href="contact.html"><i class="material-icons">&#xE0E1;</i>Contact</a></li>
       </ul>
     </nav>
 
     <main id="panel">
-      <header>
-        <button class="toggle-button">☰</button>
-      </header>
+    <!-- background -->
+      <div id="background">
+        <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list"></div>
+      <div id="purple-gradient-overlay"></div>
+    </div>
+  <!-- end of the background code -->
+        <header>
+          <button class="toggle-button">☰</button>
+          <h1 id="logo">Gen-K</h1>
+        </header>
       
       <section id="contact">
         <form id="contact-form" action="contact.php" method="get">
@@ -58,20 +65,23 @@
 
     </main>
 
+    <!-- allows access to the album art that will be used as the background image -->
+    <script language="javascript" type="text/javascript" src="http://london-ssd.myautodj.com:2199/system/recenttracks.js"></script>
+
+    <!-- slideout code. don't touch this -->
     <script src="js/slideout.min.js"></script>
     <script>
-      var slideout = new Slideout({
-        'panel': document.getElementById('panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 256,
-        'tolerance': 70
-      });
+        var slideout = new Slideout({
+          'panel': document.getElementById('panel'),
+          'menu': document.getElementById('menu'),
+          'padding': 150,
+          'tolerance': 70
+        });
 
-      // Toggle button
-      document.querySelector('.toggle-button').addEventListener('click', function() {
+        // Toggle button
+        document.querySelector('.toggle-button').addEventListener('click', function() {
         slideout.toggle();
-      });
+        });
     </script>
-    <script src="js/localstorage-forms.js"></script>
 </body>
 </html>
