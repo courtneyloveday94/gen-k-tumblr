@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Home | Gen-K</title>
+		<title>Radio | Gen-K</title>
 		<meta name="description" content="Socialise and listen to the hottest kpop hits.">
 	  	<meta http-equiv="cleartype" content="on">
 	    <meta name="MobileOptimized" content="320">
@@ -29,28 +29,45 @@
 
     <main id="panel">
     <!-- background -->
-      <div id="background">
-        <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list"></div>
-      <div id="purple-gradient-overlay"></div>
-    </div>
+        <div id="background">
+            <img id="cc_strinfo_trackimageurl_ggbgcjrh" class="cc_streaminfo album-art-background" />
+            <div id="purple-gradient-overlay"></div>
+        </div>
   <!-- end of the background code -->
         <header>
           <button class="toggle-button">☰</button>
           <h1 id="logo">Gen-K</h1>
         </header>
       
-      <section id="radio">
-            <div class="cc_player" data-username="ggbgcjrh">Loading ...</div>
-            <div class="now-playing"><p>Current song: <a href="http://london-ssd.myautodj.com:2199/tunein/ggbgcjrh.pls" id="cc_strinfo_song_ggbgcjrh" class="cc_streaminfo">Loading ...</a></p><br /></div>
-            <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list">Loading ...</div>
-            <div id="cc_req_result_ggbgcjrh"></div>
-            <form>
-                Song artist: <input type="text" id="cc_req_artist_ggbgcjrh" name="request[artist]" size="40" maxlength="127" /><br />
-                Song title: <input type="text" id="cc_req_title_ggbgcjrh" name="request[title]" size="40" maxlength="127" /><br />
-                <input type="button" id="cc_req_button_ggbgcjrh" class="cc_request_form" value="Submit song request" /><br />
-            </form>
-        </div> 
-      </section>
+        <section id="radio">
+            <div id="song-info">
+                <img id="cc_strinfo_trackimageurl_ggbgcjrh" class="cc_streaminfo">
+                <span id="cc_strinfo_tracktitle_ggbgcjrh" class="cc_streaminfo"></span>
+                <span id="cc_strinfo_trackartist_ggbgcjrh" class="cc_streaminfo"></span>
+            </div>
+
+            <div class="cc_player music-player" data-username="ggbgcjrh"></div>
+            
+            <div id="song-request">
+                <div id="cc_req_result_ggbgcjrh"></div>
+                <form>
+                    Song artist: <input type="text" id="cc_req_artist_ggbgcjrh" name="request[artist]" size="40" maxlength="127" /><br />
+                    Song title: <input type="text" id="cc_req_title_ggbgcjrh" name="request[title]" size="40" maxlength="127" /><br />
+                    <input type="button" id="cc_req_button_ggbgcjrh" class="cc_request_form" value="Submit song request" /><br />
+                </form>
+            </div>
+            <!-- lightbox to show the previously played songs -->
+            <a class="prev-played-lightbox" href="#prev-played-mobile">Previously played songs</a>
+            <div class="prev-played-lightbox-target" id="prev-played-mobile">
+                
+                <div id="now-playing-prev">
+                    <p>Now playing</p>  
+                </div>
+                
+                <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list"></div>
+                <a class="lightbox-close" href="#"></a>
+            </div>
+        </section>
  		
     </main>
 
