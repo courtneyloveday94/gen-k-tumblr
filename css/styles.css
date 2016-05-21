@@ -356,6 +356,7 @@ header {
 	width: 100%;
 	position: absolute;
 	left: 0;
+	height: 100%;
 }
 
 #radio .jp-volume-bar {
@@ -373,7 +374,8 @@ header {
 	position: absolute;
 	left: 50%;
 	margin-left: -22px;
-	top: 55%;
+	top: 40%;
+	z-index: 2;
 }
 
 #radio .music-player > div {
@@ -381,8 +383,27 @@ header {
 	width: 100%;
 }
 
+#radio .jp-mute {
+	background: url(../img/mute-button.png) no-repeat !important;
+	background-size: 40px 40px cover;
+	width: 40px;
+	height: 40px;
+	background-color: pink;
+	position: relative;
+	top: 37%;
+	left: 10%;
+	margin-right: 0 !important;
+}
 
-
+#radio .jp-volume-max {
+	background: url(../img/volume-button.png) no-repeat !important;
+	background-size: 40px 40px cover;
+	width: 40px;
+	height: 40px;
+	top: 37%;
+	left: 80%;
+	margin: 0;
+}
 
 
 
