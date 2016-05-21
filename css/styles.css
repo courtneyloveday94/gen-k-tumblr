@@ -106,7 +106,9 @@ nav li a {
 	font-size: 20px;
 	position: relative;
 	top: 8px;
-
+	height: 55px;
+	width: 150px;
+	display: block;
 }
 #menu {
 	width: 150px;
@@ -234,7 +236,7 @@ header {
 #home p {
 	font-size: 18px;
 	text-transform: lowercase;
-	font-family: "open-sans";
+	font-family: "myriad-pro";
 	font-weight: 300;
 	color: #fff;
 	text-align: center;
@@ -717,6 +719,7 @@ top: 0px;
 	left: 0;
 	box-sizing: border-box;
 	overflow: hidden;
+	border: 1px solid pink;
 }
 .radio-widget-container {
 	position: relative;
@@ -775,7 +778,9 @@ top: 0px;
 	width: 70%;
 	min-width: 210px;
 	height: 50px;
-	overflow: hidden;
+	overflow: auto;
+	overflow-y: hidden;
+	-ms-overflow-y: hidden;
 	position: absolute;
 	white-space: nowrap; 
 	display: inline-block !important;
@@ -871,7 +876,82 @@ top: 0px;
 
 /*-------------------------  CONTACT CSS  -------------------------*/
 
-/*-------------------------  CONTACT TABLET CSS  -------------------------*/
+/*-------------------------  CONTACT PHONE CSS  -------------------------*/
+#contact {
+	height: calc(100% - 115px);
+	position: relative;
+}
+#contact #contact-info {
+	width: 100%;
+	max-width: 410px;
+	display: block;
+	height: 50%;
+	margin: 0 auto;
+}
+#contact form {
+	width: 100%;
+	display: block;
+	height: 50%;
+	position: relative;
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+
+#contact h3 { 
+	font-family: "myriad-pro";
+	font-weight: 300;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 auto;
+	height: 40px;
+	width: 230px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 20px;
+	line-height: 40px;
+}
+#contact p {
+	font-family: "myriad-pro";
+	font-weight: 300;
+	font-size: 15px;
+	color: #fff;
+	width: 80%;
+	margin: 3% auto;
+	display: block;
+}
+
+#contact-submit {
+	display: block;
+	height: 40px;
+	width: 100%;
+	max-width: 450px;
+	position: absolute;
+	bottom: 0;
+	background-color: #00c9d0;
+	color: #fff;
+	font-family: "myriad-pro";
+	font-weight: 700;
+	border: none;
+	text-transform: uppercase;
+	line-height: 40px;
+}
+#contact #name, #contact #email {
+	width: 100%;
+	max-width: 450px;
+	height: 25px;
+	text-align: center;
+}
+#contact #contact-message {
+	width: 100%;
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+
 
 /*-------------------------  CONTACT TABLET CSS  -------------------------*/
 

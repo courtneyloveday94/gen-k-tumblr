@@ -16,46 +16,48 @@
 	</head>
 
 <body>
-
     <nav id="menu">
-      <h2>Menu</h2>
-      <ul>
-        <li><a href="index.html"><i class="material-icons">&#xE88A;</i>Home</a></li>
-        <li><a href="radio.html"><i class="material-icons">&#xE405;</i>Radio</a></li>
-        <li><a href="chat.html"><i class="material-icons">&#xE0CB;</i>Chat</a></li>
-        <li id="current"><a href="contact.html"><i class="material-icons">&#xE0E1;</i>Contact</a></li>
-      </ul>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html"><i class="material-icons">&#xE88A;</i>Home</a></li>
+            <li><a href="radio.html"><i class="material-icons">&#xE405;</i>Radio</a></li>
+            <li><a href="chat.html"><i class="material-icons">&#xE0CB;</i>Chat</a></li>
+            <li id="current"><a href="contact.html"><i class="material-icons">&#xE0E1;</i>Contact</a></li>
+        </ul>
     </nav>
 
     <main id="panel">
-    <!-- background -->
-      <div id="background">
-            <img id="cc_strinfo_trackimageurl_ggbgcjrh" class="cc_streaminfo album-art-background" />
+        <!-- background -->
+        <div id="background">
+            <img id="cc_strinfo_trackimageurl_ggbgcjrh" class="cc_streaminfo album-art-background"/>
             <div id="purple-gradient-overlay"></div>
         </div>
-  <!-- end of the background code -->
+        <!-- end of the background code -->
         <header>
-          <button class="toggle-button">☰</button>
-          <h1 id="logo">Gen-K</h1>
+            <button class="toggle-button">☰</button>
+            <h1 id="logo">Gen-K</h1>
         </header>
       
-      <section id="contact">
-        <form id="contact-form" action="contact.php" method="get">
-          <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-          </div>
-          <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-          </div>
-          <div>
-            <label for="contact-message">Message:</label>
-            <textarea name="message" id="contact-message" cols="30" rows="5" required></textarea>
-            <span id="contact-message-message"></span>
-          </div>
-        </form>
-      </section>
+        <section id="contact">
+            <div id="contact-info">
+                <h3>Contact</h3>
+                <p>If you have any issues or enquiries, please fill out and submit the form below. We will get back to you within 2 working-business days.</p>
+                <p>Alternatively, you could email <strong>generation.k.fm@gmail.com</strong></p>
+            </div>
+
+            <form id="contact-form" action=mailto:generation.k.fm@gmail.com method="post" enctype="multipart/form-data" name="contact-form">
+                <div>
+                    <input type="text" id="name" placeholder="NAME" required>
+                </div>
+                <div>
+                    <input type="email" id="email" placeholder="EMAIL ADDRESS" required>
+                </div>
+                <div id="message-wrapper">
+                    <textarea name="message" id="contact-message" cols="30" rows="5" placeholder="MESSAGE" required></textarea>
+                </div>
+                <input type="submit" value="submit" id="contact-submit">
+            </form>
+        </section>
  		<section class="radio-widget">
             <div class="radio-widget-container">
                 <div class="cc_player" data-username="ggbgcjrh"></div>
@@ -90,5 +92,6 @@
         slideout.toggle();
         });
     </script>
+    <script src="js/localstorage-forms.js"></script>
 </body>
 </html>
