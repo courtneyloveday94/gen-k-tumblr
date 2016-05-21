@@ -8,6 +8,7 @@ body {
 	width: 100%;
 	height: 100%;
 	min-width: 320px;
+	min-height: 480px;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
@@ -405,12 +406,6 @@ header {
 	margin: 0;
 }
 
-
-
-
-
-
-
 .prev-played-lightbox {
 	height: 50px;
 	color: #fff;
@@ -431,9 +426,6 @@ header {
 	margin-right: 5px;
 	font-size: 30px !important;
 }
-
-/* Styles the lightbox, removes it from sight and adds the fade-in transition */
-
 .prev-played-lightbox-target {
 position: fixed;
 top: -100%;
@@ -446,9 +438,6 @@ width: 100%;
 transition: opacity .5s ease-in-out;
 overflow: hidden;
 }
-
-/* Styles the lightbox image, centers it vertically and horizontally, adds the zoom-in transition and makes it responsive using a combination of margin and absolute positioning */
-
 .prev-played-lightbox-target div {
 box-sizing: border-box;
 -webkit-transition: .5s ease-in-out;
@@ -456,9 +445,6 @@ box-sizing: border-box;
 -o-transition: .5s ease-in-out;
 transition: .5s ease-in-out;
 }
-
-/* Styles the close link, adds the slide down transition */
-
 a.lightbox-close {
 display: block;
 width:50px;
@@ -475,9 +461,6 @@ left: 0;
 -o-transition: .5s ease-in-out;
 transition: .5s ease-in-out;
 }
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
 a.lightbox-close:before {
 content: "";
 display: block;
@@ -492,9 +475,6 @@ top:10px;
 -o-transform:rotate(45deg);
 transform:rotate(45deg);
 }
-
-/* Provides part of the "X" to eliminate an image from the close link */
-
 a.lightbox-close:after {
 content: "";
 display: block;
@@ -509,9 +489,6 @@ top:10px;
 -o-transform:rotate(-45deg);
 transform:rotate(-45deg);
 }
-
-/* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
-
 .prev-played-lightbox-target:target {
 opacity: 1;
 top: 0;
@@ -846,47 +823,54 @@ top: 0px;
 
 /*-------------------------  CHAT PHONE CSS  -------------------------*/
 
-#chat-input {
+#chat {
+	height: calc(100% - 115px);
+}
+#chat-container {
+	height: 100%;
+}
+#cboxdiv {
+	width: 100% !important;
+	height: 100% !important;
+}
+#cboxdiv .chat-history {
+	height: 77%;
 	width: 100%;
-	background-color: white;
-	display: inline-block;
+	margin: 0;
+	overflow: hidden;
+}
+#cboxmain2-2374625 {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	top: 3px;
+}
+
+#cboxdiv .cbox-input {
 	position: absolute;
-	bottom: 50px;
-	height: 60px;
-}
-.usermsg {
-	width: 70%;
-	display: inline-block;
-}
-#chat-user-input {
-	display: none;
-}
-#left-buttons {
-	width: 14%;
-	float: left;
-	padding: 0;
-	margin: 0;
-}
-#right-buttons {
-	float: right;
-	width: 14%;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
-}
-#submitmsg {
-	background: transparent;
-	border: none;
-	padding: 0;
-	margin: 15px 0 0 5px;
-}
-#usermsg {
+	bottom: 0px;
 	width: 100%;
-	background-color: white;
-	height: 50px;
-	display: inline-block;
-	border: 1px solid #aaa;
-	margin-top: 2.5px;
+	height: 23%;
+	margin: 0;
+}
+
+.cbox-input {
+	height:;
+	position:;
+}
+
+.frmtb {
+	width: 70% !important;
+	height: ;
+}
+
+.fmbody {
+	height: 100px !important;
+}
+
+#chat tbody > tr  {
+	display: none !important;
+	content: "bob";
 }
 
 /*-------------------------  CHAT TABLET CSS  -------------------------*/
