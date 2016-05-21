@@ -883,10 +883,8 @@ top: 0px;
 }
 #contact #contact-info {
 	width: 100%;
-	max-width: 410px;
 	display: block;
 	height: 50%;
-	margin: 0 auto;
 }
 #contact form {
 	width: 100%;
@@ -894,7 +892,6 @@ top: 0px;
 	height: 50%;
 	position: relative;
 	max-width: 450px;
-	margin: 0 auto;
 }
 
 
