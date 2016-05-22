@@ -857,6 +857,16 @@ top: 0px;
 	height: 50px !important;
 }
 
+.radio-widget .jp-volume-max {
+	display: block;
+	position: absolute;
+	right: 0 !important;
+	bottom: 0 !important;
+	background: url(../img/volume-button.png) !important;
+	height: 40px;
+	width: 40px;
+}
+
 /*-------------------------  RADIO WIDGET TABLET CSS  -------------------------*/
 @media all and (min-width: 480px) {
 
