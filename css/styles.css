@@ -136,6 +136,9 @@ header {
 	height: 60px;
 	width: 100%;
 }
+#desktop-p {
+	display: none;
+}
 
 /*------------------------- BACKGROUND ALBUM COVER BACKGROUND CSS -------------------------*/
 
@@ -309,6 +312,9 @@ header {
 	border: none;
 	mix-blend-mode: screen;
 }
+#desktop-nav, #desktop-logo, #repsonsive-mockup, #responsive-mockup img, #responsive-mockup p {
+	display: none;
+}
 
 /*-------------------------  HOME TABLET CSS  -------------------------*/
 
@@ -364,8 +370,160 @@ header {
 
 /*-------------------------  HOME DESKTOP CSS  -------------------------*/
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 960px) {
+	.slideout-menu, #menu {
+		display: none;
+	}
+	.toggle-button {
+		display: none;
+	}
+	#home {
+		position: relative;
+		margin: 0 auto;
+		top: 20px;
+		left: 0;
+		height: calc(100% - 80px);
+		width: 100%;
+		max-width: 1200px;
+		min-height: 680px;	
+	}
+	#logo {
+		display: none !important;
+	}
+	#home h1 {
+		font-size: 60px !important;
+		width: 250px;
+		height: 100px;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	#home p {
+		font-size: 50px;
+		position: absolute;
+		top: 28%;
+		left: 65%;
+		height: 200px;
+		width: 425px;
+		margin: -25px 0 0 -125px;
+		text-align: left;
+	}
+	#home ul {
+		position: absolute;
+		top: 70%;
+		height:100px;
+		width: 400px;
+		left: 67%;
+		margin: -50px 0 0 -150px;
+	}
+	#radio-button a {
+		top: 7px;
+	}
+	#chat-button a {
+		top: 9px;
+	}
+	#home .button {
+		font-size: 16px;
+		line-height: 30px;
+		height: 50px;
+		border-radius: 25px;
+		width:160px;
+		display: inline-block;
+		margin-right: 7%;
 
+	}
+	#desktop-nav, #desktop-logo {
+		display: block;
+	}
+	#desktop-logo {
+		font-size: 50px;
+		text-align: left;
+		position: absolute;
+		height: 100px;
+		top: -20px;
+		left: 20px;
+	}
+	#desktop-nav {
+		max-width: 1300px;
+		height: 83px;
+		position: relative;
+		margin: 0 auto;
+	}
+	#desktop-nav ul li {
+		display: inline-block;		
+	}
+	#desktop-nav ul {
+		position: absolute;
+		right: 0;
+	}
+
+	#desktop-nav li {
+		height: 80px;
+		width: 150px;
+		box-sizing: border-box;
+	}
+	#desktop-nav a {
+		font-weight: 700 !important;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		height: 30px;
+		line-height: 28px;
+		width: 80px;
+		position: relative !important;
+		top: 27px !important;
+		left: 35px;
+		box-sizing: border-box;
+		border: 1px solid rgba(255,255,255,0.0);
+	}
+	#desktop-nav a:hover {
+		border-radius: 15px;
+		border: 1px solid rgba(255,255,255,0.5);
+		box-sizing: border-box;
+
+	}
+	#desktop-nav .nav-chat {
+		border: none;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 15px; 
+		color: #000;
+		mix-blend-mode: screen;
+	}
+	#desktop-nav .nav-chat:hover {
+		background-color: rgba(255,255,255,0.7);
+		border: none;
+	}
+	
+	#repsonsive-mockup, #responsive-mockup img, #responsive-mockup p {
+		display: block;
+	}
+	#responsive-mockup img {
+		height:55%;
+		position: absolute;
+		left: 10%;
+		top: 20%;
+	}
+	#responsive-mockup p {
+		font-size: 24px;
+		position: absolute;
+		left: 13%;
+		top: 75%;
+		text-align: center;
+		width: 280px;
+		height: 100px;
+		margin: 0;
+	}
+	#responsive-mockup p strong {
+		font-weight: 700;
+	}
+	#desktop-p {
+		display: inline;
+	}
+	#desktop-p strong {
+		font-weight: 700;
+	}
 }
 
 /*-------------------------  RADIO CSS  -------------------------*/
@@ -603,7 +761,7 @@ top: 0px;
 	position: absolute;
 	right: 50%;
 	margin-right: -115px;
-	top: 18.5%;
+	top: 65%;
 }
 
 #radio .cctrack .cccover {
@@ -633,7 +791,7 @@ top: 0px;
 	font-family: "myriad-pro";
 	white-space: nowrap;
 	text-align: center;
-	font-weight: 700;
+	font-weight: 300;
 }
 #radio .cctrack:nth-of-type(1) .cctitle {
 	color: #fff;
@@ -642,7 +800,7 @@ top: 0px;
 	white-space: nowrap;
 	text-align: center;
 	font-weight: 300;
-	margin-bottom: 4%;
+	margin-bottom: 1%;
 }
 #radio .cctrack:nth-of-type(1) .ccdetails {
 	margin: 0;
@@ -656,7 +814,7 @@ top: 0px;
 #radio .cctrack:nth-of-type(5) .ccdetails,
 #radio .cctrack:nth-of-type(6) .ccdetails {
 	position: relative;
-	top: 25%;
+	top: 15%;
 }
 
 #radio .cctrack:nth-of-type(2){
