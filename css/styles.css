@@ -785,7 +785,6 @@ top: 0px;
 	left: 0;
 	box-sizing: border-box;
 	overflow: hidden;
-	border: 1px solid pink;
 }
 .radio-widget-container {
 	position: relative;
