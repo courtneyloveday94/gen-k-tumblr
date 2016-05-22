@@ -959,7 +959,8 @@ a.lightbox-close:after {
 @media all and (min-width: 550px) {
 	.radio-widget {
 		max-width: 660px;
-		margin: 0 auto;
+		left: 50%;
+		margin-left: -330px;
 	}
 }
 .radio-widget-container {
