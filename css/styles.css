@@ -202,7 +202,6 @@ header {
   background: -moz-linear-gradient(-45deg, rgba(64, 64, 128, 1) 0%, rgba(130, 130, 172, 1) 100%);
   background: -webkit-linear-gradient(-45deg, rgba(64, 64, 128, 1) 0%, rgba(130, 130, 172, 1) 100%);
   background: linear-gradient(135deg, rgba(64, 64, 128, 1) 0%, rgba(130, 130, 172, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient(1 startColorstr='#404080', endColorstr='#8282ac', GradientType=1);
   position: fixed;
   top: 0;
   left: 0;
@@ -559,7 +558,7 @@ header {
 #radio .jp-details {
 	display: none;
 }
-#song-request {
+#radio #song-request {
 	display: none;
 }
 
@@ -638,7 +637,6 @@ header {
 
 #radio .jp-mute {
 	background: url(../img/mute-button.png) no-repeat !important;
-	background-size: 40px 40px cover;
 	width: 40px;
 	height: 40px;
 	background-color: transparent;
@@ -650,7 +648,6 @@ header {
 
 #radio .jp-volume-max {
 	background: url(../img/volume-button.png) no-repeat !important;
-	background-size: 40px 40px cover;
 	width: 40px;
 	height: 40px;
 	top: 37%;
@@ -658,7 +655,7 @@ header {
 	margin: 0;
 }
 
-.prev-played-lightbox {
+#radio .prev-played-lightbox {
 	height: 50px;
 	color: #fff;
 	background-color: #00c9d0;
@@ -672,13 +669,13 @@ header {
 	text-align: center;
 	line-height: 50px
 }
-.prev-played-lightbox i{
+#radio .prev-played-lightbox i{
 	position: relative;
 	top: 10px;
 	margin-right: 5px;
 	font-size: 30px !important;
 }
-.prev-played-lightbox-target {
+#radio .prev-played-lightbox-target {
 	position: fixed;
 	top: -100%;
 	width: 100%;
@@ -690,14 +687,14 @@ header {
 	transition: opacity .5s ease-in-out;
 	overflow: hidden;
 }
-.prev-played-lightbox-target div {
+#radio .prev-played-lightbox-target div {
 	box-sizing: border-box;
 	-webkit-transition: .5s ease-in-out;
 	-moz-transition: .5s ease-in-out;
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 }
-a.lightbox-close {
+#radio a.lightbox-close {
 	display: block;
 	width:50px;
 	height:50px;
@@ -713,7 +710,7 @@ a.lightbox-close {
 	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 }
-a.lightbox-close:before {
+#radio a.lightbox-close:before {
 	content: "";
 	display: block;
 	height: 30px;
@@ -727,7 +724,7 @@ a.lightbox-close:before {
 	-o-transform:rotate(45deg);
 	transform:rotate(45deg);
 }
-a.lightbox-close:after {
+#radio a.lightbox-close:after {
 	content: "";
 	display: block;
 	height: 30px;
@@ -741,22 +738,22 @@ a.lightbox-close:after {
 	-o-transform:rotate(-45deg);
 	transform:rotate(-45deg);
 }
-.prev-played-lightbox-target:target {
+#radio .prev-played-lightbox-target:target {
 	opacity: 1;
 	top: 0;
 	bottom: 0;
 }
 
-.prev-played-lightbox-target:target img {
+#radio .prev-played-lightbox-target:target img {
 	max-height: 100%;
 	max-width: 100%;
 }
 
-.prev-played-lightbox-target:target a.lightbox-close {
+#radio .prev-played-lightbox-target:target a.lightbox-close {
 	top: 0px;
 }
 
-#now-playing-prev {
+#radio #now-playing-prev {
 	height: 30%;
 	display: block;
 	width: 100%; 
@@ -765,14 +762,13 @@ a.lightbox-close:after {
   	background: -moz-linear-gradient(-45deg, rgba(64, 64, 128, 1) 0%, rgba(130, 130, 172, 1) 100%);
 	background: -webkit-linear-gradient(-45deg, rgba(64, 64, 128, 1) 0%, rgba(130, 130, 172, 1) 100%);
 	background: linear-gradient(135deg, rgba(64, 64, 128, 1) 0%, rgba(130, 130, 172, 1) 100%);
-	filter: progid: DXImageTransform.Microsoft.gradient(1 startColorstr='#404080', endColorstr='#8282ac', GradientType=1);
 	filter: opacity(80%);
 	-webkit-filter: opacity(80%);
 	-moz-filter: opacity(80%);
 	-o-filter: opacity(80%);
 	-ms-filter: opacity(80);
 }
-#now-playing-prev p {
+#radio #now-playing-prev p {
 	font-family: "myriad-pro";
 	font-size: 14px;
 	text-transform: uppercase;
@@ -906,28 +902,28 @@ a.lightbox-close:after {
 	font-size: 27px;
 	color: #3ec2ca;
 }
-.prev-played-lightbox-target .cctrack{
+#radio .prev-played-lightbox-target .cctrack{
 	margin: 0;
 	font-family: "myriad-pro";
 }
-.prev-played-lightbox-target .cctrack .ccartist {
+#radio .prev-played-lightbox-target .cctrack .ccartist {
 	font-size: 14px;
 	color: #989898;
 	white-space: nowrap;
 	position: relative;
 }
-.prev-played-lightbox-target .cctrack .cctitle {
+#radio .prev-played-lightbox-target .cctrack .cctitle {
 	font-size: 18px;
 	color: #585858;
 	font-weight: 700;
 }
 
-.prev-played-lightbox-target .cctrack:nth-of-type(4),
-.prev-played-lightbox-target .cctrack:nth-of-type(6) {
+#radio .prev-played-lightbox-target .cctrack:nth-of-type(4),
+#radio .prev-played-lightbox-target .cctrack:nth-of-type(6) {
 	background-color: #f1f1f1;
 }
 
-#tablet-right-radio-top > p {
+#radio #tablet-right-radio-top > p {
 	display: none !important;
 }
 
@@ -941,16 +937,16 @@ a.lightbox-close:after {
 		bottom: 0;
 		min-height: 550px;
 	}
-	#tablet-left-radio, #tablet-right-radio {
+	#radio #tablet-left-radio, #radio #tablet-right-radio {
 		width: 45%;
 		position: absolute;
 		height: 95%;
 		max-height: 700px;
 	}
-	#tablet-left-radio {
+	#radio #tablet-left-radio {
 		left: 3%;
 	}
-	#tablet-left-radio-container {
+	#radio #tablet-left-radio-container {
 		position: relative;
 		height: 100%;
 		width: 100%;
@@ -1000,7 +996,7 @@ a.lightbox-close:after {
 		top: 50%;
 		z-index: 2;
 	}
-	#song-info {
+	#radio #song-info {
 		height: 70%;
 	}
 
@@ -1011,7 +1007,6 @@ a.lightbox-close:after {
 
 	#radio .jp-mute {
 		background: url(../img/mute-button.png) no-repeat !important;
-		background-size: 40px 40px cover;
 		width: 40px;
 		height: 40px;
 		background-color: transparent;
@@ -1023,7 +1018,6 @@ a.lightbox-close:after {
 
 	#radio .jp-volume-max {
 		background: url(../img/volume-button.png) no-repeat !important;
-		background-size: 40px 40px cover;
 		width: 40px;
 		height: 40px;
 		top: 37%;
@@ -1031,14 +1025,14 @@ a.lightbox-close:after {
 		margin: 0;
 	}
 
-	#tablet-right-radio {
+	#radio #tablet-right-radio {
 		right: 3%;
 	}
-	#tablet-right-radio-top {
+	#radio #tablet-right-radio-top {
 		position: relative;
 	}
 
-	#tablet-right-radio-top > p {
+	#radio #tablet-right-radio-top > p {
 		display: block !important;
 		font-family: "myriad-pro";
 		font-size: 14px;
@@ -1056,7 +1050,7 @@ a.lightbox-close:after {
 		margin-left: -115px;
 	}
 
-	.prev-played-lightbox-target {
+	#radio .prev-played-lightbox-target {
 		position: absolute;
 		top: 15%;
 		width: 100%;
@@ -1068,32 +1062,32 @@ a.lightbox-close:after {
 		transition: opacity 0;
 		overflow: hidden;
 	}
-	#tablet-right-radio-container {
+	#radio #tablet-right-radio-container {
 		position: relative;
 		height: 100%;
 		width: 100%;
 	}
-	.prev-played-lightbox-target div {
+	#radio .prev-played-lightbox-target div {
 		-webkit-transition: 0;
 		-moz-transition: 0;
 		-o-transition: 0;
 		transition: 0;
 	}
-	a.lightbox-close, 
-	a.lightbox-close:before, 
-	a.lightbox-close:after, 
-	.prev-played-lightbox, 
-	.prev-played-lightbox-target:target,
-	.prev-played-lightbox-target:target img, 
-	.prev-played-lightbox-target:target a.lightbox-close, 
-	#now-playing-prev {
+	#radio a.lightbox-close, 
+	#radio a.lightbox-close:before, 
+	#radio a.lightbox-close:after, 
+	#radio .prev-played-lightbox, 
+	#radio .prev-played-lightbox-target:target,
+	#radio .prev-played-lightbox-target:target img, 
+	#radio .prev-played-lightbox-target:target a.lightbox-close, 
+	#radio #now-playing-prev {
 		display: none;
 	}
 	#radio .cctrack:nth-of-type(1) {
 		display: none !important;
 	}
 
-	.cc_recenttracks_list {
+	#radio .cc_recenttracks_list {
 		height: 100%;
 		width: 100%;
 	}
@@ -1139,24 +1133,24 @@ a.lightbox-close:after {
 		left: -40px;
 		top: 10%;
 	}
-	.prev-played-lightbox-target .cctrack .ccartist {
+	#radio .prev-played-lightbox-target .cctrack .ccartist {
 		font-size: 14px;
 		position: relative;
 	}
-	.prev-played-lightbox-target .cctrack .cctitle {
+	#radio .prev-played-lightbox-target .cctrack .cctitle {
 		font-size: 18px;
 	}
-	#tablet-right-radio-top {
+	#radio #tablet-right-radio-top {
 		height: 60%;
 	}
-	#song-request {
+	#radio #song-request {
 		display: block;
 		position: absolute;
 		bottom: -1%;
 		height: 40%;
 		width: 100%;
 	}
-	#song-request-button {
+	#radio #song-request-button {
 		font-family: "myriad-pro";
 		font-size: 14px;
 		text-transform: uppercase;
@@ -1173,7 +1167,7 @@ a.lightbox-close:after {
 		top: 0%;
 		margin-left: -115px;
 	}
-	#song-request input {
+	#radio #song-request input {
 		height: 40px;
 		width: 100%;
 		margin: 0;
@@ -1183,71 +1177,38 @@ a.lightbox-close:after {
 		text-align: center;
 		font-size: 12px;
 	}
-	#song-request form {
+	#radio #song-request form {
 		position: absolute;
 		bottom: 0;
 	}
-	#song-request input:nth-of-type(1), #song-request input:nth-of-type(2) {
+	#radio #song-request input:nth-of-type(1), #radio #song-request input:nth-of-type(2) {
 		background-color: rgba(255,255,255,0.3);
 		color: #fff !important;
-		:-webkit-input-placeholder
-		:-moz-placeholder
-		::-moz-placeholder
-		:-ms-input-placeholder
 	}
 	*::-webkit-input-placeholder {
     color: white;
 	}
 	*:-moz-placeholder {
-	    /* FF 4-18 */
 	    color: white;
 	}
 	*::-moz-placeholder {
-	    /* FF 19+ */
 	    color: white;
 	}
 	*:-ms-input-placeholder {
-	    /* IE 10+ */
 	    color: white;
 	}
-	#song-request input:nth-of-type(3) {
+	#radio #song-request input:nth-of-type(3) {
 		background-color: #00c9d0;
 		color: #fff;
 		font-family: "myriad-pro";
 		font-weight: 700;
 	}
 }
-@media all and (min-height: 800px) {
-	#tablet-left-radio, #tablet-right-radio {
-		width: 45%;
-		position: absolute;
-		height: 95%;
-		max-height: 700px;
-		top: 50%;
-		margin-top: -350px;
-}
 /*-------------------------  RADIO DESKTOP CSS  -------------------------*/
 
 @media all and (min-width: 1000px) {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*-------------------------  RADIO WIDGET CSS  -------------------------*/
 /*-------------------------  RADIO WIDGET PHONE CSS  -------------------------*/
@@ -1335,6 +1296,7 @@ a.lightbox-close:after {
 	top: -5px;
 	margin-left: 15%;
 }
+
 .radio-widget .jp-type-single, .radio-widget .jp-gui {
 	height: 50px !important;
 }
@@ -1519,8 +1481,6 @@ a.lightbox-close:after {
 	background-color: rgba(255,255,255,0.3);
 	border: none;
 }
-
-
 
 /*-------------------------  CONTACT TABLET CSS  -------------------------*/
 
