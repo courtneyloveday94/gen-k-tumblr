@@ -611,11 +611,13 @@ header {
 }
 
 #radio .jp-volume-bar {
-	width: 250px;
+	width: 160px;
 	position: absolute;
-	top: 10px;
+	display: inline-block;
+	text-align: center;
+	top: 15px;
 	left: 50%;
-	margin-left: -125px;
+	margin-left: -80px
 
 }
 
@@ -639,7 +641,7 @@ header {
 	background-size: 40px 40px cover;
 	width: 40px;
 	height: 40px;
-	background-color: pink;
+	background-color: transparent;
 	position: relative;
 	top: 37%;
 	left: 10%;
@@ -925,6 +927,9 @@ a.lightbox-close:after {
 	background-color: #f1f1f1;
 }
 
+#tablet-right-radio-top > p {
+	display: none !important;
+}
 
 
 /*-------------------------  RADIO TABLET CSS  -------------------------*/
@@ -934,21 +939,107 @@ a.lightbox-close:after {
 		height: calc(100% - 80px);
 		position: relative;
 		bottom: 0;
+		min-height: 550px;
 	}
 	#tablet-left-radio, #tablet-right-radio {
 		width: 45%;
 		position: absolute;
 		height: 95%;
+		max-height: 700px;
 	}
 	#tablet-left-radio {
 		left: 3%;
-		border: 1px solid pink;
 	}
+	#tablet-left-radio-container {
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+	#radio #cc_strinfo_trackimageurl_ggbgcjrh {
+		height: 170px;
+		position: absolute;
+		left: 50%;
+		top: 5%;
+		margin-left: -85px;
+	}
+	#radio #cc_strinfo_tracktitle_ggbgcjrh{
+		font-size: 24px;
+		position: absolute;
+		top: 40%;
+	}
+	#radio #cc_strinfo_trackartist_ggbgcjrh {
+		font-size: 20px;
+		position: absolute;
+		top: 55%;
+	}
+	#radio .jp-controls {
+		position: absolute;
+		margin: -24px 0 0 -24px;
+
+	}
+	#radio .jp-volume-controls {
+		width: 100%;
+		position: absolute;
+		left: 0;
+		height: 100%;
+	}
+	#radio .jp-volume-bar {
+		width: 220px;
+		position: absolute;
+		left: 50%;
+		top: 0%;
+		margin-left: -110px;
+	}
+
+	#radio .jp-play {
+		background: url(../img/play-button.png) !important;
+		background-color: #fff;
+		position: absolute;
+		left: 50%;
+		margin-left: -22px;
+		top: 50%;
+		z-index: 2;
+	}
+	#song-info {
+		height: 70%;
+	}
+
+	#radio .music-player > div {
+		height: 100%;
+		width: 100%;
+	}
+
+	#radio .jp-mute {
+		background: url(../img/mute-button.png) no-repeat !important;
+		background-size: 40px 40px cover;
+		width: 40px;
+		height: 40px;
+		background-color: transparent;
+		position: relative;
+		top: 37%;
+		left: 0%;
+		margin-right: 0 !important;
+	}
+
+	#radio .jp-volume-max {
+		background: url(../img/volume-button.png) no-repeat !important;
+		background-size: 40px 40px cover;
+		width: 40px;
+		height: 40px;
+		top: 37%;
+		left: 85%;
+		margin: 0;
+	}
+
 	#tablet-right-radio {
 		right: 3%;
 	}
+	#tablet-right-radio-top {
+		position: relative;
+	}
 
 	#tablet-right-radio-top > p {
+		display: block !important;
 		font-family: "myriad-pro";
 		font-size: 14px;
 		text-transform: uppercase;
@@ -967,14 +1058,20 @@ a.lightbox-close:after {
 
 	.prev-played-lightbox-target {
 		position: absolute;
-		top: 10%;
+		top: 15%;
 		width: 100%;
-		background-color: pink;
+		height: 80%;
+		background-color: transparent;
 		-webkit-transition: opacity 0;
 		-moz-transition: opacity 0;
 		-o-transition: opacity 0;
 		transition: opacity 0;
 		overflow: hidden;
+	}
+	#tablet-right-radio-container {
+		position: relative;
+		height: 100%;
+		width: 100%;
 	}
 	.prev-played-lightbox-target div {
 		-webkit-transition: 0;
@@ -997,12 +1094,13 @@ a.lightbox-close:after {
 	}
 
 	.cc_recenttracks_list {
-		height: 70%;
+		height: 100%;
 		width: 100%;
 	}
 	#radio .cctrack {
 		height: 20%;
 		width: 100%;
+
 	}
 	#radio .cctrack .ccdetails {
 		position: relative;
@@ -1083,15 +1181,51 @@ a.lightbox-close:after {
 		box-sizing: border-box;
 		border: none;
 		text-align: center;
-		font-size: 11px;
+		font-size: 12px;
 	}
 	#song-request form {
 		position: absolute;
 		bottom: 0;
 	}
-	#song-request 
+	#song-request input:nth-of-type(1), #song-request input:nth-of-type(2) {
+		background-color: rgba(255,255,255,0.3);
+		color: #fff !important;
+		:-webkit-input-placeholder
+		:-moz-placeholder
+		::-moz-placeholder
+		:-ms-input-placeholder
+	}
+	*::-webkit-input-placeholder {
+    color: white;
+	}
+	*:-moz-placeholder {
+	    /* FF 4-18 */
+	    color: white;
+	}
+	*::-moz-placeholder {
+	    /* FF 19+ */
+	    color: white;
+	}
+	*:-ms-input-placeholder {
+	    /* IE 10+ */
+	    color: white;
+	}
+	#song-request input:nth-of-type(3) {
+		background-color: #00c9d0;
+		color: #fff;
+		font-family: "myriad-pro";
+		font-weight: 700;
+	}
 }
-
+@media all and (min-height: 800px) {
+	#tablet-left-radio, #tablet-right-radio {
+		width: 45%;
+		position: absolute;
+		height: 95%;
+		max-height: 700px;
+		top: 50%;
+		margin-top: -350px;
+}
 /*-------------------------  RADIO DESKTOP CSS  -------------------------*/
 
 @media all and (min-width: 1000px) {
@@ -1373,12 +1507,17 @@ a.lightbox-close:after {
 	max-width: 450px;
 	height: 25px;
 	text-align: center;
+	background-color: rgba(255,255,255,0.3);
+	border: none;
+	margin-bottom: 1%;
 }
 #contact #contact-message {
 	width: 100%;
 	max-width: 450px;
 	margin: 0 auto;
 	padding: 5px;
+	background-color: rgba(255,255,255,0.3);
+	border: none;
 }
 
 

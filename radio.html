@@ -41,37 +41,40 @@
       
         <section id="radio">
             <div id="tablet-left-radio">
-                <div id="song-info">
-                    <img id="cc_strinfo_trackimageurl_ggbgcjrh" class="cc_streaminfo">
-                    <span id="cc_strinfo_tracktitle_ggbgcjrh" class="cc_streaminfo"></span>
-                    <span id="cc_strinfo_trackartist_ggbgcjrh" class="cc_streaminfo"></span>
+                <div id="tablet-left-radio-container">
+                    <div id="song-info">
+                        <img id="cc_strinfo_trackimageurl_ggbgcjrh" class="cc_streaminfo">
+                        <span id="cc_strinfo_tracktitle_ggbgcjrh" class="cc_streaminfo"></span>
+                        <span id="cc_strinfo_trackartist_ggbgcjrh" class="cc_streaminfo"></span>
+                    </div>
+                    <div class="cc_player music-player" data-username="ggbgcjrh"></div>
                 </div>
-
-                <div class="cc_player music-player" data-username="ggbgcjrh"></div>
             </div>
             <div id="tablet-right-radio">
-                <div id="tablet-right-radio-top">
-                    <p class="prev-played-tablet">Previous songs</p>
-                    <a class="prev-played-lightbox" href="#prev-played-mobile"><i class="material-icons">&#xE039;</i>Previous songs</a>
-                    <div class="prev-played-lightbox-target" id="prev-played-mobile">
-                        
-                        <div id="now-playing-prev">
-                            <p>Now playing</p>  
+                <div id="tablet-right-radio-container">
+                    <div id="tablet-right-radio-top">
+                        <p class="prev-played-tablet">Previous songs</p>
+                        <a class="prev-played-lightbox" href="#prev-played-mobile"><i class="material-icons">&#xE039;</i>Previous songs</a>
+                        <div class="prev-played-lightbox-target" id="prev-played-mobile">
+                            
+                            <div id="now-playing-prev">
+                                <p>Now playing</p>  
+                            </div>
+                            
+                            <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list"></div>
+                            <a class="lightbox-close" href="#"></a>
                         </div>
-                        
-                        <div id="cc_recenttracks_ggbgcjrh" class="cc_recenttracks_list"></div>
-                        <a class="lightbox-close" href="#"></a>
                     </div>
-                </div>
-                
-                <div id="song-request">
-                    <p id="song-request-button">Song Requests</p>
-                    <div id="cc_req_result_ggbgcjrh"></div>
-                    <form>
-                        <input type="text" id="cc_req_artist_ggbgcjrh artist-input" name="request[artist]" size="40" maxlength="127" placeholder="SONG ARTIST">
-                        <input type="text" id="cc_req_title_ggbgcjrh song-input" name="request[title]" size="40" maxlength="127" placeholder="SONG TITLE">
-                        <input type="button" id="cc_req_button_ggbgcjrh song-request-submit" class="cc_request_form" value="SUBMIT SONG REQUEST">
-                    </form>
+                    
+                    <div id="song-request">
+                        <p id="song-request-button">Song Requests</p>
+                        <div id="cc_req_result_ggbgcjrh"></div>
+                        <form>
+                            <input type="text" id="cc_req_artist_ggbgcjrh artist-input" name="request[artist]" size="40" maxlength="127" placeholder="SONG ARTIST">
+                            <input type="text" id="cc_req_title_ggbgcjrh song-input" name="request[title]" size="40" maxlength="127" placeholder="SONG TITLE">
+                            <input type="button" id="cc_req_button_ggbgcjrh song-request-submit" class="cc_request_form" value="SUBMIT SONG REQUEST">
+                        </form>
+                    </div>
                 </div>
             </div>
             
