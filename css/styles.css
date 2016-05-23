@@ -1236,7 +1236,7 @@ header {
 	.radio-widget {
 		max-width: 660px;
 		left: 50%;
-		margin-left: -330px;
+		transform: translateX(-50%);
 	}
 }
 .radio-widget-container {
@@ -1370,7 +1370,7 @@ header {
 
 @media all and (min-width: 550px) {
 	#chat {
-		height: calc(100% - 115px);
+		height: calc(100% - 130px);
 	}
 	#chat-container {
 		height: 100%;
@@ -1417,8 +1417,21 @@ header {
 
 /*-------------------------  CONTACT PHONE CSS  -------------------------*/
 #contact {
-	height: calc(100% - 115px);
+	height: calc(100% - 120px);
 	position: relative;
+}
+ #contact-relative {
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+#contact-absolute {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	max-height: 650px;
 }
 #contact #contact-info {
 	width: 100%;
@@ -1504,6 +1517,7 @@ header {
 	border: none;
 	margin-bottom: 1%;
 	position: absolute;
+	color: #fff;
 }
 #contact #name {
 	top: 0;
@@ -1534,135 +1548,54 @@ header {
 }
 *::-webkit-input-placeholder {
     color: white;
-	}
-	*:-moz-placeholder {
-	    color: white;
-	}
-	*::-moz-placeholder {
-	    color: white;
-	}
-	*:-ms-input-placeholder {
-	    color: white;
-	}
+}
+*:-moz-placeholder {
+	color: white;
+}
+*::-moz-placeholder {
+	color: white;
+}
+*:-ms-input-placeholder {
+	color: white;
+}
+
+
 
 /*-------------------------  CONTACT TABLET CSS  -------------------------*/
 
-@media all and (min-width: 550px) {
+@media all and (min-height: 700px) {
 	#contact {
-		height: calc(100% - 115px);
+		height: calc(100% - 130px);
 		position: relative;
 	}
-	#contact #contact-info {
-		width: 100%;
+	#contact-absolute {
 		display: block;
-		height: 50%;
-		position: relative;
-		max-width: 450px;
-		margin: 0 auto;
-	}
-	#contact form {
-		width: 100%;
-		display: block;
-		height: 50%;
-		position: relative;
-		max-width: 450px;
-		margin: 0 auto;
-	}
-
-	#contact h3 { 
-		font-family: "myriad-pro";
-		font-weight: 300;
-		font-size: 18px;
-		text-align: center;
-		text-transform: uppercase;
-		display: block;
-		margin: 0 auto;
-		height: 40px;
-		width: 230px;
-		color: #fff;
-		border: 1px solid #fff;
-		border-radius: 20px;
-		line-height: 40px;
 		position: absolute;
-		top: 10%;
-		left: 50%;
-		margin-left: -115px;
-	}
-	#contact p {
-		font-family: "myriad-pro";
-		font-weight: 300;
-		font-size: 15px;
-		color: #fff;
-		width: 80%;
-		margin: 0 auto;
-		display: block;
-		text-align: center;
-	}
-	#contact p:nth-of-type(1) {
-		position: absolute;
-		top: 50%;
+		height: calc(100% - 120px);
+		width: 100%;
+		max-height: 650px;
+		top: 40%;
 		left: 50%;
 		transform: translate(-50%, -40%);
-
 	}
-	#contact p:nth-of-type(2) {
-		position: absolute;
-		top: 90%;
-		left: 50%;
-		transform: translate(-50%, -90%);
-	}
-
-	#contact-submit {
+	#contact-relative {
 		display: block;
-		height: 40px;
+		position: relative;
+		height: 100%;
 		width: 100%;
-		max-width: 450px;
-		position: absolute;
-		bottom: 0;
-		background-color: #00c9d0;
-		color: #fff;
-		font-family: "myriad-pro";
-		font-weight: 700;
-		border: none;
-		text-transform: uppercase;
-		line-height: 40px;
 	}
-	#contact #name, #contact #email {
-		width: 99.5%;
-		max-width: 450px;
-		height: 25px;
-		text-align: center;
-		background-color: rgba(255,255,255,0.3);
-		border: none;
-		margin-bottom: 1%;
-		position: absolute;
+	#contact p {
+		font-size: 18px;
+	}
+	#contact #name, #contact #email, #contact-submit, 
+	#contact #contact-message {
+		font-size: 15px;
 	}
 	#contact #name {
 		top: 0;
 	}
 	#contact #email {
 		top: 17%;
-	}
-	#contact #message-wrapper {
-		position: absolute;
-		width: 100%;
-		max-width: 450px;
-		height: 40%;
-		bottom: 25%;
-	}
-	#contact #contact-message {
-		width: 98%;
-		margin: 0 auto;
-		padding: 5px;
-		background-color: rgba(255,255,255,0.3);
-		border: none;
-	}
-	#contact-form > div {
-		height: 5%;
-		display: block;
-	}
-	#contact-form #email div {
-		height: 5%;
 	}
 }
 
