@@ -102,6 +102,7 @@ nav ul {
 }
 nav li {
 	height: 55px;
+	width: 100%;
 	list-style: none;
 }
 nav li a {
@@ -113,18 +114,20 @@ nav li a {
 	font-size: 20px;
 	position: relative;
 	top: 8px;
-	height: 55px;
-	width: 150px;
+	height: 100%;
+	width: 100%;
 	display: block;
 }
 #menu {
 	width: 150px;
 }
+
 #menu .material-icons {
 	font-size: 26px;
 	position: relative;
 	top: 5px;
 	margin: 0 15px 0 20px;
+	z-index: 1;
 
 }
 #panel {position: relative;}
@@ -154,6 +157,10 @@ header {
 }
 #desktop-p {
 	display: none;
+}
+#current a {
+	position: relative;
+
 }
 
 /*------------------------- BACKGROUND ALBUM COVER BACKGROUND CSS -------------------------*/
