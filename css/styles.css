@@ -562,6 +562,16 @@ header {
 #radio {
 	height: calc(100% - 50px);
 }
+#squiggle {
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 10%;
+	z-index:-5;
+}
+#tablet-left-radio, #tablet-left-radio-container {
+	height: 100%;
+}
 #radio .jp-details {
 	display: none;
 }
@@ -577,7 +587,7 @@ header {
 #radio #cc_strinfo_trackimageurl_ggbgcjrh {
 	height: 120px;
 	width: auto;
-	margin: 10px 0 10px 23%;
+	margin: 10% 0 10px 23%;
 }
 #radio span {
 	display: block;
@@ -958,12 +968,16 @@ header {
 		height: 100%;
 		width: 100%;
 	}
+	#squiggle {
+		top: 0%;
+	}
 	#radio #cc_strinfo_trackimageurl_ggbgcjrh {
 		height: 170px;
 		position: absolute;
 		left: 50%;
 		top: 5%;
 		margin-left: -85px;
+		margin-top: 0;
 	}
 	#radio #cc_strinfo_tracktitle_ggbgcjrh{
 		font-size: 24px;
@@ -1192,18 +1206,6 @@ header {
 		background-color: rgba(255,255,255,0.3);
 		color: #fff !important;
 	}
-	*::-webkit-input-placeholder {
-    color: white;
-	}
-	*:-moz-placeholder {
-	    color: white;
-	}
-	*::-moz-placeholder {
-	    color: white;
-	}
-	*:-ms-input-placeholder {
-	    color: white;
-	}
 	#radio #song-request input:nth-of-type(3) {
 		background-color: #00c9d0;
 		color: #fff;
@@ -1223,7 +1225,10 @@ header {
 }
 /*-------------------------  RADIO DESKTOP CSS  -------------------------*/
 
-@media all and (min-width: 1000px) {
+@media all and (min-width: 900px) {
+	#squiggle {
+		top: -10%;
+	}
 
 }
 
