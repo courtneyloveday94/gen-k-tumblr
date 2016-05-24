@@ -424,7 +424,7 @@ header {
 	#home p {
 		font-size: 50px;
 		position: absolute;
-		top: 28%;
+		top: 20%;
 		left: 65%;
 		height: 200px;
 		width: 425px;
@@ -433,7 +433,7 @@ header {
 	}
 	#home ul {
 		position: absolute;
-		top: 70%;
+		top: 65%;
 		height:100px;
 		width: 400px;
 		left: 67%;
@@ -568,6 +568,7 @@ header {
 	position: fixed;
 	top: 10%;
 	z-index:-5;
+	opacity: 0.5;
 }
 #tablet-left-radio, #tablet-left-radio-container {
 	height: 100%;
@@ -1226,10 +1227,97 @@ header {
 /*-------------------------  RADIO DESKTOP CSS  -------------------------*/
 
 @media all and (min-width: 900px) {
+	#radio {
+		height: calc(100% - 80px);
+		position: relative;
+		max-width: 1200px;
+		left: 50%;
+		transform: translate(-50%);
+	}
 	#squiggle {
 		top: -10%;
 	}
+	#radio #tablet-left-radio, 
+	#radio #tablet-right-radio {
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
 
+	#radio #tablet-right-radio-top/*prev playing*/ {
+		position: absolute;
+		top: 37%;
+		transform: translateY(-50%);
+		width: 30%;
+		left: 2.5%;
+	}
+	#radio #tablet-left-radio-container/*radio*/{
+		position: absolute;
+		height: calc(100% - 70px);
+		top: 46.5%;
+		width: 30%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+	}
+	#radio #song-request/*song request*/ {
+		display: block;
+		position: absolute;
+		top: 7%;
+		right: 2.5%;
+		height: calc(100% - 70px);
+		width: 30%;
+		
+	}
+	
+	#radio #cc_strinfo_trackimageurl_ggbgcjrh {
+		height: 200px;
+		position: absolute;
+		left: 50%;
+		top: 5%;
+		margin-left: -100px;
+		margin-top: 0;
+	}
+	#radio #cc_strinfo_tracktitle_ggbgcjrh{
+		font-size: 24px;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		margin: 0;
+		width: 100%;		
+	}
+	#radio #cc_strinfo_trackartist_ggbgcjrh {
+		font-size: 20px;
+		position: absolute;
+		top: 60%;
+		text-align: center;
+		margin: 0;
+		width: 100%;		
+	}
+	#radio #song-request input {
+		height: 40px;
+		width: 100%;
+		margin: 0;
+		margin-bottom: 8%;
+		box-sizing: border-box;
+		border: none;
+		text-align: center;
+		font-size: 12px;
+	}
+	#radio #song-request form {
+		position: absolute;
+		top: 10%;
+	}
+	#radio #song-request input:nth-of-type(3) {
+		background-color: #00c9d0;
+		opacity: 0.6;
+		color: #fff;
+		font-family: "myriad-pro";
+		font-weight: 700;
+		width: 70%;
+		margin-left: 15%;
+	}
 }
 
 /*-------------------------  RADIO WIDGET CSS  -------------------------*/
