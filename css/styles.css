@@ -91,6 +91,8 @@ button {
 		font-size: 60px;
 		top: 0px;
 		left: 17px;
+		height: 70px;
+		width: 70px;
 	}
 }
 #current {
@@ -1447,6 +1449,7 @@ header {
 	width: 100%;
 	margin: 0;
 	overflow: hidden;
+	z-index: 4;
 }
 #cboxmain2-2374625 {
 	height: 100%;
@@ -1459,8 +1462,9 @@ header {
 	position: absolute;
 	bottom: -3px;
 	width: 100%;
-	height: 23%;
+	height: 20%;
 	margin: 0;
+	z-index: 0;
 }
 
 .frmtb {
