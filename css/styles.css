@@ -1514,9 +1514,6 @@ header {
 
 /*-------------------------  CHAT DESKTOP CSS  -------------------------*/
 
-@media all and (min-width: 1000px) {
-
-}
 
 /*-------------------------  CONTACT CSS  -------------------------*/
 
@@ -1702,10 +1699,4 @@ header {
 	#contact #email {
 		top: 17%;
 	}
-}
-
-/*-------------------------  CONTACT DESKTOP CSS  -------------------------*/
-
-@media all and (min-width: 1000px) {
-
 }
